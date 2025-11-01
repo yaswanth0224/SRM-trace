@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.srmtrace.controller.AdminController" spacing="8" padding="10">
+  <Label text="Admin Panel"/>
+  <ListView fx:id="itemsList" prefHeight="400"/>
+  <HBox spacing="8">
+    <Button fx:id="verifyBtn" text="Verify" onAction="#onVerify"/>
+    <Button fx:id="deleteBtn" text="Delete" onAction="#onDelete"/>
+  </HBox>
+  <Label fx:id="status"/>
+</VBox>

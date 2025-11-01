@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.srmtrace.controller.RegisterController"
+      spacing="8" alignment="CENTER" padding="12">
+  <Label text="Register - SRM Trace" style="-fx-font-size:18px;"/>
+  <TextField fx:id="username" promptText="username"/>
+  <PasswordField fx:id="password" promptText="password"/>
+  <TextField fx:id="displayName" promptText="Display name"/>
+  <HBox spacing="8">
+    <Button fx:id="submit" text="Create" onAction="#onSubmit"/>
+    <Button text="Close" onAction="#onClose"/>
+  </HBox>
+  <Label fx:id="status"/>
+</VBox>

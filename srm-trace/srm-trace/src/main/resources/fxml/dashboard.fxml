@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.srmtrace.controller.DashboardController">
+  <top>
+    <HBox spacing="10" padding="10">
+      <Label fx:id="lblUser" text="User"/>
+      <Button text="Admin" onAction="#openAdmin"/>
+    </HBox>
+  </top>
+  <left>
+    <VBox spacing="8" padding="10">
+      <Label text="Post Item"/>
+      <TextField fx:id="titleField" promptText="Title"/>
+      <TextArea fx:id="descField" promptText="Description" prefRowCount="4"/>
+      <ChoiceBox fx:id="typeChoice"/>
+      <TextField fx:id="locationField" promptText="Location"/>
+      <HBox spacing="8">
+        <Button fx:id="pickImageBtn" text="Pick Image" onAction="#onPickImage"/>
+        <Button fx:id="postBtn" text="Post" onAction="#onPost"/>
+      </HBox>
+      <ImageView fx:id="preview" fitWidth="180" fitHeight="140"/>
+    </VBox>
+  </left>
+  <center>
+    <VBox spacing="8" padding="10">
+      <Label text="All Items"/>
+      <ListView fx:id="listView" onMouseClicked="#onSelectItem"/>
+    </VBox>
+  </center>
+  <right>
+    <VBox spacing="8" padding="10">
+      <Label text="Matches"/>
+      <Label fx:id="matchLabel" wrapText="true" prefWidth="200"/>
+    </VBox>
+  </right>
+</BorderPane>

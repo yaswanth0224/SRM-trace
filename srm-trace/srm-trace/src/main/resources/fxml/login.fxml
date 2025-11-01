@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.srmtrace.controller.LoginController">
+  <children>
+    <VBox alignment="CENTER" spacing="10" layoutX="100" layoutY="40" prefWidth="700" prefHeight="520">
+      <Label text="SRM Trace" style="-fx-font-size:28px;"/>
+      <TextField fx:id="username" promptText="Username" prefWidth="320"/>
+      <PasswordField fx:id="password" promptText="Password" prefWidth="320"/>
+      <HBox spacing="10">
+        <Button fx:id="loginBtn" text="Login" onAction="#onLogin"/>
+        <Button fx:id="regBtn" text="Register" onAction="#onRegister"/>
+      </HBox>
+      <Label fx:id="status"/>
+    </VBox>
+  </children>
+</AnchorPane>
